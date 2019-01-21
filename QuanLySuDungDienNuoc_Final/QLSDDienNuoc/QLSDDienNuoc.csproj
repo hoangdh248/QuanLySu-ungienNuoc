@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9BE6B8ED-3EAD-4BD8-A740-3232728F48E6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QLSDDienNuoc</RootNamespace>
+    <AssemblyName>QLSDDienNuoc</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Xceed.Words.NET, Version=1.2.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocX.1.2.1\lib\Xceed.Words.NET.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoiMatKhau.Designer.cs">
+      <DependentUpon>DoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoginFlat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoginFlat.Designer.cs">
+      <DependentUpon>frmLoginFlat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhanQuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhanQuyen.Designer.cs">
+      <DependentUpon>PhanQuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SuaKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuaKhachHang.designer.cs">
+      <DependentUpon>SuaKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuaNguoiDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuaNguoiDung.designer.cs">
+      <DependentUpon>SuaNguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemNguoiDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemNguoiDung.designer.cs">
+      <DependentUpon>ThemNguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemGia.designer.cs">
+      <DependentUpon>ThemGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemTieuThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemTieuThu.Designer.cs">
+      <DependentUpon>ThemTieuThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemKhachHang.Designer.cs">
+      <DependentUpon>ThemKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\baseUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\baseUC.Designer.cs">
+      <DependentUpon>baseUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCBieuDo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCBieuDo.Designer.cs">
+      <DependentUpon>UCBieuDo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCcuaSoChinh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCcuaSoChinh.Designer.cs">
+      <DependentUpon>UCcuaSoChinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCGia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCGia.Designer.cs">
+      <DependentUpon>UCGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCNguoiDung.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCNguoiDung.designer.cs">
+      <DependentUpon>UCNguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCquanLyTieuThu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCquanLyTieuThu.Designer.cs">
+      <DependentUpon>UCquanLyTieuThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XacNhanThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XacNhanThanhToan.Designer.cs">
+      <DependentUpon>XacNhanThanhToan.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DoiMatKhau.resx">
+      <DependentUpon>DoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoginFlat.resx">
+      <DependentUpon>frmLoginFlat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhanQuyen.resx">
+      <DependentUpon>PhanQuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SuaKhachHang.resx">
+      <DependentUpon>SuaKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuaNguoiDung.resx">
+      <DependentUpon>SuaNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemNguoiDung.resx">
+      <DependentUpon>ThemNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemGia.resx">
+      <DependentUpon>ThemGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemTieuThu.resx">
+      <DependentUpon>ThemTieuThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemKhachHang.resx">
+      <DependentUpon>ThemKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\baseUC.resx">
+      <DependentUpon>baseUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCBieuDo.resx">
+      <DependentUpon>UCBieuDo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCcuaSoChinh.resx">
+      <DependentUpon>UCcuaSoChinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCGia.resx">
+      <DependentUpon>UCGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCNguoiDung.resx">
+      <DependentUpon>UCNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCquanLyTieuThu.resx">
+      <DependentUpon>UCquanLyTieuThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XacNhanThanhToan.resx">
+      <DependentUpon>XacNhanThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PC Beauty Wallpaper-FHD-2k %2854%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guYWqxF.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\45906123_308934773027685_1324878539006148608_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Commons\Commons.csproj">
+      <Project>{8db78f48-60a8-4a7e-b585-ad4c7925cf98}</Project>
+      <Name>Commons</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LogicDataModels\LogicDataModels.csproj">
+      <Project>{073daf92-4bca-4333-9a73-4e83cc0327d6}</Project>
+      <Name>LogicDataModels</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimazar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lamp_outlet_idea_electricity_120422_1920x1080.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-admin-settings-male-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-menu-male-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-expensive-price-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-access-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-exit-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-hydroelectric-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-multiply-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-checkmark-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-box-important-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-box-important-32 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo2.jpg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-plus-math-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-plus-math-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pencil-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pencil-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-electricity-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-left-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-left-161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-left-162.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-menu-male-filled-40 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-menu-male-filled-39.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-menu-male-filled-38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-menu-male-401.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-name-tag-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-name-tag-401.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
